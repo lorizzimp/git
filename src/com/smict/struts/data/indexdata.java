@@ -124,7 +124,7 @@ public class indexdata {
 		dbconnect dbcon = new dbconnect();
 		Connection con = dbcon.DBconn_mysql();
 		String sqlQuery = "select * from vgallery where pic_status = '1'";
-		Statement stmt = con.createStatement();
+		Statement stmt = con.createStatement(); 
 		ResultSet rs = stmt.executeQuery(sqlQuery);
 		String usefor="hgallery",gal_id="",gal_name="",gal_picpath="",gal_picstatus="";
 		while (rs.next()){
